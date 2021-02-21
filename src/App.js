@@ -21,7 +21,10 @@ function App() {
           <div class='pockets'>
             <PocketPanel />
             <PocketPanel />
-           <PocketPanel />
+            <PocketPanel />
+            <PocketPanel />
+            <PocketPanel />
+            <PocketPanel />
           </div>
         </div>
       </div>
