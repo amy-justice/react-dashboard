@@ -4,8 +4,8 @@ import Box from '@material-ui/core/Box'
 
 function PocketPanel() {
   return (
-    <Grid item xs={4} spacing={3}>
-        <Box border={1} mx={3} my={1} p={3}>
+    <Grid item xs={4} spacing={0}>
+        <Box border={1} mx={4} my={1} p={4}>
             Pocket
         </Box>
     </Grid>

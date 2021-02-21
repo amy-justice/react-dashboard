@@ -22,10 +22,10 @@ function App() {
           {/* <div class='pockets'> */}
           <Grid
             container
-            spacing={1}
+            spacing={0}
             direction="row"
             justify="center"
-            alignItems="center" >
+            alignItems="flex-start" >
             <PocketPanel />
             <PocketPanel />
             <PocketPanel />
