@@ -3,6 +3,7 @@ import Sidebar from './Sidebar'
 import HeaderBar from './HeaderBar'
 import MainPanel from './MainPanel'
 import PocketPanel from './PocketPanel'
+import Grid from '@material-ui/core/Grid'
 
 const items = [
   { name: 'home', label: 'Home' },
@@ -18,14 +19,20 @@ function App() {
         <Sidebar items={items} />
         <div class="info-panel">
           <MainPanel />
-          <div class='pockets'>
+          {/* <div class='pockets'> */}
+          <Grid
+            container
+            spacing={1}
+            direction="row"
+            justify="center"
+            alignItems="center" >
             <PocketPanel />
             <PocketPanel />
             <PocketPanel />
             <PocketPanel />
             <PocketPanel />
             <PocketPanel />
-          </div>
+          </Grid>
         </div>
       </div>
     </div>
