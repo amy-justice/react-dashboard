@@ -5,34 +5,29 @@ import MainPanel from './MainPanel'
 import PocketPanel from './PocketPanel'
 import Grid from '@material-ui/core/Grid'
 
-const items = [
-  { name: 'home', label: 'Home' },
-  { name: 'pockets', label: 'My Pockets' },
-  { name: 'budget', label: 'Budget' },
-]
-
 function App() {
   return (
-    <div class="app-container">
+    <div class="container bg-gray-200 overflow-y-hidden">
       <HeaderBar />
       <div class="content">
-        <Sidebar items={items} />
-        <div class="info-panel">
+        <Sidebar />
+        <div class="grid-cols-1 w-9/12 gap-2">
           <MainPanel />
-          {/* <div class='pockets'> */}
-          <Grid
+          <div class="container grid grid-cols-3 m-8 gap-6">
+          {/* <Grid
             container
             spacing={0}
             direction="row"
             justify="center"
-            alignItems="flex-start" >
+            alignItems="flex-start" > */}
             <PocketPanel />
             <PocketPanel />
             <PocketPanel />
             <PocketPanel />
             <PocketPanel />
             <PocketPanel />
-          </Grid>
+          {/* </Grid> */}
+          </div>
         </div>
       </div>
     </div>
