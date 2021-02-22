@@ -7,7 +7,7 @@ import Grid from '@material-ui/core/Grid'
 
 function App() {
   return (
-    <div class="container bg-gray-200 overflow-y-hidden">
+    <div class="container bg-gray-200">
       <HeaderBar />
       <div class="content">
         <Sidebar />
