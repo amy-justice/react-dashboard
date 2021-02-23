@@ -15,9 +15,9 @@ const pockets = [
 
 function App() {
   return (
-    <div class="container bg-gray-200">
+    <div class="container bg-gray-200 w-screen">
       <HeaderBar />
-      <div class="content">
+      <div class="container flex flex-row">
         <Sidebar />
         <div class="grid-cols-1 w-9/12 gap-2">
           <MainPanel />
