@@ -1,8 +1,19 @@
 import React from 'react'
+import {
+  Route,
+  NavLink,
+  Redirect,
+  HashRouter,
+  Switch
+} from "react-router-dom";
+import PocketsPage from "./PocketsPage"
+import Budget from "./Budget"
+import Home from './Home'
 import Sidebar from './Sidebar'
 import HeaderBar from './HeaderBar'
 import MainPanel from './MainPanel'
-import Pockets from './Pockets'
+import PocketsContainer from './PocketsContainer'
+import Routes from './Routes'
 
 const pockets = [
   { name: 'home', label: 'Home' },
@@ -17,12 +28,10 @@ function App() {
   return (
     <div class="container bg-white max-w-full">
       <HeaderBar />
-      <div class="container flex flex-row bg-gray-100 h-full max-h-full">
-        <Sidebar />
-        <div class="grid-cols-1 w-9/12 gap-2">
-          <MainPanel />
-          <Pockets pockets={pockets} />
-        </div>
+      <div class="container bg-gray-100 h-full max-h-full">
+        <HashRouter>
+          <Routes />
+        </HashRouter>
       </div>
     </div>
   )
