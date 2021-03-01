@@ -5,7 +5,23 @@ class Budget extends React.Component {
     render() {
         return (
             <div class="grid-cols-1 w-9/12 gap-2">
-                <MainPanel />
+                <div class='container md:container-sm bg-white m-6 h-96 border-2 p-8 rounded-lg w-3/4 md:w-3/4 flex-initial'>
+                    <h2 class="text-xl mb-4 text-center">Budget breakdown</h2>
+
+                    <h3 class="text-lg font-semibold">Category</h3>
+                    <div class="border-b-2 border-gray-100 my-2 py-2 font-normal w-5/6">
+                        <div class="inline-block w-4/5 text-left pl-4">Budget</div>
+                        <div class="inline-block w-1/5 text-right pr-4">$0</div>
+                    </div>
+                    <div class="border-b-2 border-gray-100 my-2 py-2 font-normal w-5/6">
+                        <div class="inline-block w-4/5 text-left pl-4">Budget</div>
+                        <div class="inline-block w-1/5 text-right pr-4">$0</div>
+                    </div>
+                    <div class="border-b-2 border-gray-100 my-2 py-2 font-normal w-5/6">
+                        <div class="inline-block w-4/5 text-left pl-4">Budget</div>
+                        <div class="inline-block w-1/5 text-right pr-4">$0</div>
+                    </div>
+                </div>
             </div>
         )
     }

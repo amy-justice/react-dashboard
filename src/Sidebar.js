@@ -14,7 +14,6 @@ import Home from './Home'
 
 function Sidebar() {
   return (
-    <div class="flex flex-col sm:flex-row sm:justify-around h-screen">
         <div class="sm:w-1/5 min-w-min lg:w-64 h-full bg-white">
             <nav class="mt-10">
                 <Link to="/" class="flex items-center py-2 px-8 bg-gray-200 text-gray-700 border-r-4 border-purple-600">
@@ -36,7 +35,6 @@ function Sidebar() {
                 </Link>
             </nav>
         </div>
-    </div>
   )
 }
 
