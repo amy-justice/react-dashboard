@@ -28,7 +28,7 @@ function App() {
   return (
     <div class="container bg-white max-w-full">
       <HeaderBar />
-      <div class="container bg-gray-100 h-full max-h-full">
+      <div class="container h-full max-h-full">
         <HashRouter>
           <Routes />
         </HashRouter>

@@ -7,11 +7,11 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 
 const Routes = () => {
   return (
-    <div class="container flex flex-row grid-cols-2 auto-cols-min">
-        <div class="flex flex-col sm:flex-row sm:justify-around h-screen sm:w-1/5 lg:w-64">
+    <div class="container flex flex-row grid-cols-2 auto-cols-min h-screen">
+        <div class="flex flex-col sm:flex-row sm:justify-around h-full sm:w-1/5 lg:w-64">
             <Sidebar />
         </div>
-        <div class="flex flex-col w-screen">
+        <div class="flex flex-col w-screen bg-gray-100">
             <Switch>
                 <Route exact path="/Home" component={Home} />
                 <Route exact path="/">
