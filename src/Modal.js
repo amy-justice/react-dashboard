@@ -12,7 +12,7 @@ export default class Modal extends React.Component {
             return null;
           }
           return (
-            <div class="h-screen w-screen bg-opacity-70 bg-gray-700 top-0 left-0 absolute justify-center flex items-center">
+            <div class="h-screen w-screen bg-opacity-70 bg-gray-700 top-0 left-0 fixed justify-center flex items-center">
                 <div class="bg-white rounded shadow p-8 m-4 max-w-md max-h-full text-center" id="modal">
                     <h2 class="text-xl mb-4">{this.props.label} Breakdown</h2>
                     <div class="border-b-2 border-gray-100 my-2 py-2 font-normal w-80">
