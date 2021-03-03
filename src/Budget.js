@@ -31,13 +31,13 @@ class Budget extends React.Component {
                         <div class="inline-block w-4/5 text-left pl-4">Budget</div>
                         <div class="inline-block w-1/5 text-right pr-4">$0</div>
                     </div>
-                    
+                    <button class="flex items-center py-2 px-8  text-gray-700 border-4 border-purple-600" onClick={this.handleClick}>print</button>
                 </div>
             </div>
               </div>
           </div>
         </div>,
-            <button class="flex items-center py-2 px-8  text-gray-700 border-r-4 border-purple-600" onClick={this.handleClick}>print</button>
+            
             </>
           );
         }
