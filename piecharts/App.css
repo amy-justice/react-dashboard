@@ -1,0 +1,51 @@
+.chart {
+  width: 500px;
+  /*height: 300px;*/
+  margin: 0 auto;
+}
+
+.c3-chart-arc path {
+  stroke: none;
+}
+
+.c3-target.c3-defocused {
+  opacity: 0.6 !important;
+}
+
+.c3-chart-arc text tspan:first-child {
+  font-weight: bold;
+}
+
+.c3-chart-arc text {
+  font-size: 12px;
+}
+
+.c3-signalkit-tooltip {
+  min-width: 100px;
+  background: #fff;
+  list-style: none;
+  margin: 0;
+  font-size: 12px;
+  padding: 8px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.96);
+  color: #737373;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.04);
+}
+
+.c3-signalkit-tooltip__row {
+  margin-top: 10px;
+}
+
+.c3-signalkit-tooltip__row span:last-child {
+  display: inline-block;
+
+  margin-left: 5px;
+}
+
+.c3-signalkit-tooltip__title {
+  color: #0c6ace;
+  font-weight: bold;
+  margin-top: 0;
+  font-size: 14px;
+}
